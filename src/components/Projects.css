@@ -1,0 +1,178 @@
+.projects{
+    height: 35rem;
+    width: 100vw;
+
+}
+.headingprojects{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.projects1{
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box1{
+    height: 20rem;
+    width: 25vw;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 2rem;
+    
+}
+.headingportfolio{
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.headingspotify{
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.headingecommerce{
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.portfolioimg{
+    height: 15rem;
+    margin-top: 1rem;
+}
+.spotifyimg{
+    height: 10rem;
+    margin-top: 3rem;
+}
+.ecommerceimg{
+    height: 12rem;
+    margin-top: 1rem;
+}
+.headingprojects :hover{
+     color: rgb(0,255,255);
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape){
+    .projects{
+        height: 30rem;
+        width: 100vw;
+    
+    }
+    .headingprojects{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .projects1{
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .box1{
+       
+        height: 17rem;
+        width: 30vw;
+        border: 2px solid white;
+        background-color: white;
+        border-radius: 2rem;
+        margin-bottom: 12rem;
+    }
+    .headingportfolio{
+        padding-top: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+        color: black;
+        font-weight: 700;
+    }
+    .headingspotify{
+        padding-top: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+        color: black;
+        font-weight: 700;
+    }
+    .headingecommerce{
+        padding-top: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+        color: black;
+        font-weight: 700;
+    }
+    .portfolioimg{
+        height: 12rem;
+        margin-top: 1rem;
+    }
+    .spotifyimg{
+        height: 7rem;
+        margin-top: 3rem;
+    }
+    .ecommerceimg{
+        height: 9rem;
+        margin-top: 1rem;
+    } 
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape){
+    .projects{
+        height: 28rem;
+        width: 100vw;
+    
+    }
+    .headingprojects{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .projects1{
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 5rem;
+    }
+    .box1{
+       
+        height: 17rem;
+        width: 30vw;
+        border: 2px solid white;
+        background-color: white;
+        border-radius: 2rem;
+        margin-bottom: 12rem;
+    }
+    .headingportfolio{
+        padding-top: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+        color: black;
+        font-weight: 700;
+    }
+    .headingspotify{
+        padding-top: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+        color: black;
+        font-weight: 700;
+    }
+    .headingecommerce{
+        padding-top: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+        color: black;
+        font-weight: 700;
+    }
+    .portfolioimg{
+        height: 12rem;
+        margin-top: 1rem;
+    }
+    .spotifyimg{
+        height: 7rem;
+        margin-top: 3rem;
+    }
+    .ecommerceimg{
+        height: 9rem;
+        margin-top: 1rem;
+    } 
+}

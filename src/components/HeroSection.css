@@ -1,0 +1,86 @@
+.herosection{
+    color: white;
+    height: 30rem;
+    background-color:rgb(13,13,13);
+    width: 100vm;
+    display: flex;
+    
+}
+.left{
+    
+    height: 40rem;
+    width: 50vw;
+    padding-top: 9rem;
+    padding-left: 6rem;
+    
+  
+}
+.herosection{
+    font-size: 1.8rem;
+}
+.herosection span{
+    color: aqua;
+}
+.stack{
+    font-size: 1.4rem;
+}
+/* .myimage{
+    height: 35rem;
+    padding-top: 10rem;
+    padding-left: 50rem;    
+} */
+ .right{
+height: 40rem;
+width: 50vw;
+
+
+}
+.myimage{
+    height: 35rem;
+    padding-top: .5rem;
+    padding-left: 11rem;
+ 
+    
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+    .herosection{
+        color: white;
+        height: 35rem;
+      background-color:rgb(13,13,13);
+        width: 100vw;
+        display: flex;
+    }
+    .left{
+    
+    height: 40rem;
+    width: 60vw;
+  
+    padding-top: 7rem;
+    padding-left:2rem;
+    }
+    .herosectionh1{
+        font-size: 1.1rem;
+    }
+    .herosectionh1 span{
+        color: rgb(0,255,255);
+    }
+    .stack{
+    font-size: 1.1rem;
+    }
+    .right{
+        height: 40rem;
+    width: 50vw;
+   
+  padding-left: 2.4rem;
+    }
+ 
+ .right img{
+    height: 30rem;
+    padding-top: 8rem;
+    padding-left: 1rem;
+ 
+    
+ }
+   
+    
+}

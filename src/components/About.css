@@ -1,0 +1,134 @@
+.about{
+    height: 35rem;
+    width: 100vw;
+    padding-top: 120px;
+    display: flex;
+    /* align-items: center; */
+}
+.img{
+    height: 20rem;
+    width: 20vw;
+    /* background-color:black; 
+    border: .7px solid white; */
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+  
+}
+.aboutimg{
+    padding-top: 1rem;
+    height: 22rem;
+    padding-left: 1rem;
+}
+.aboutsection{
+    height: 35rem;
+    width: 75vw;
+    
+
+}
+.headingabout{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.headingh3about{
+    padding-top: 16px;
+    text-align: center;
+    color: rgb(152, 149, 149);
+    font-size:1.6rem ;
+    
+}
+.paraabout{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+ 
+
+}
+.para1about{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right:1.8rem ;
+    padding-right: 2rem;
+}
+.btnabout1{
+    height: 3rem;
+    width: 10vw;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border-radius: 5rem; 
+     border: none;
+    background-color: white;
+    font-weight: 700;
+   font-size: 0.90rem;
+}
+.headingabout:hover{
+    color: rgb(0,255,255);
+}
+.headingh3about:hover{
+    color: white;
+}
+.btnabout1:hover{
+    background-color: rgb(0,255,255);
+} 
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+
+    .about{
+        height: 25rem;
+        width: 100vw;
+        display: flex;
+        padding-top: 1rem;
+        /* align-items: center; */
+    }
+    .img{
+        display: none;
+      
+    }
+   
+    .aboutsection{
+        height: 35rem;
+        width: 100vw;
+        
+    }
+    .headingabout{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .headingh3about{
+        text-align: center;
+        color: rgb(152, 149, 149);
+    }
+    .paraabout{
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        margin-right: 1.8rem;
+    
+    }
+    .para1about{
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        margin-left: 3rem;
+        margin-right:2rem ;
+    }
+    .btnabout1{
+        height: 3rem;
+        width: 50vw;
+        margin-left: 11rem;
+        margin-top: 2rem;
+        border-radius: 5rem;
+        border: none;
+        background-color: white;
+        font-weight: 700;
+       font-size: 0.90rem;
+    }
+    .headingabout:hover{
+        color: rgb(0,255,255);
+    }
+    .headingh3about:hover{
+        color: white;
+    }
+    .btnabout1:hover{
+        background-color: rgb(0,255,255);
+    }
+}
