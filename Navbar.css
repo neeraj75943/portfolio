@@ -1,0 +1,37 @@
+.navbar{
+    height: 6rem;
+    width: 100vm;
+    background-color: black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo h1{
+    font-size: 2rem;
+}
+.logo h1 span{
+    color: aqua;
+
+}
+.list{
+    margin-left: 3rem;
+    
+}
+.list:hover{
+    padding-bottom: .50rem;
+    border-bottom: 4px solid rgb(0,255,255);
+    color:rgb(0,255,255); ;
+}
+.btn{
+    height: 2rem;
+    width: 10vw;
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 5rem;
+}
+.btn:hover{
+    background-color: aqua;
+}
