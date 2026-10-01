@@ -1,32 +1,21 @@
-import "./Skills.css"
-import react1 from "../assets/react1.png"
-import html from "../assets/html.png"
-import tailwind from "../assets/tailwind.png"
+import "./Skills.css";
+
+const skillGroups = [
+    ["Programming", ["JavaScript", "Java", "C"]],
+    ["Frontend", ["HTML5", "CSS", "React.js", "Tailwind CSS", "Bootstrap"]],
+    ["Backend", ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication"]],
+    ["Database", ["PostgreSQL", "MySQL", "SQL"]],
+    ["Tools", ["Git", "GitHub", "Vercel", "VS Code", "Agile / Scrum"]],
+];
 
 
 export default function Skills(){
     return(
-        <div className="skills">
-            <div className="headingskills">
-                <h1>My Skills</h1>
+        <section id="skills" className="skills">
+            <div className="skills-heading"><p className="section-eyebrow">What I work with</p><h1>Technical Skills</h1></div>
+            <div className="skills-grid">
+                {skillGroups.map(([group, skills]) => <article className="skill-card" key={group}><h2>{group}</h2><div className="skill-tags">{skills.map((skill) => <span key={skill}>{skill}</span>)}</div></article>)}
             </div>
-            <div className="skills1">
-                <div className="react">
-                    <div className="reactimg">
-                        <img src={react1} alt="" className="reactimg2" />
-                    </div>
-                </div>
-                <div className="html">
-                    <div className="htmlimg">
-                        <img src={html} alt="" className="htmlimg1"/>
-                    </div>
-                </div>
-                <div className="tailwind">
-                    <div className="tailwindimg">
-                        <img src={tailwind} alt="" className="tailwindimg1" />
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     )
 }

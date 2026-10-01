@@ -1,37 +1,107 @@
-.navbar{
-    height: 6rem;
-    width: 100vm;
-    background-color: black;
-    
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4.5rem;
+  padding: 0.75rem var(--page-padding);
+  background: rgba(8, 10, 10, 0.96);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+}
+.logo {
+  color: white;
+  font-family: Orbitron, sans-serif;
+  font-size: clamp(1.15rem, 3vw, 1.6rem);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.logo span,
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+.nav-links a {
+  position: relative;
+  color: white;
+  font-size: clamp(0.82rem, 1.4vw, 0.95rem);
+  text-decoration: none;
+  transition: color 180ms ease;
+  white-space: nowrap;
+}
+.nav-links a.nav-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--accent);
+}
+.nav-cv svg {
+  width: 0.9rem;
+}
+.nav-links a.active::after {
+  position: absolute;
+  right: 0;
+  bottom: -0.55rem;
+  left: 0;
+  height: 2px;
+  background: var(--accent);
+  content: "";
+}
+.menu-toggle {
+  display: none;
+  width: 2.75rem;
+  height: 2.5rem;
+  padding: 0.55rem;
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  border-radius: 0.4rem;
+  background: transparent;
+  cursor: pointer;
+}
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  margin: 0.3rem 0;
+  background: var(--accent);
+}
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0.5rem var(--page-padding) 1rem;
+    background: rgba(8, 10, 10, 0.98);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  }
+  .nav-links.is-open {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.logo h1{
-    font-size: 2rem;
-}
-.logo h1 span{
-    color: aqua;
-
-}
-.list{
-    margin-left: 3rem;
-    
-}
-.list:hover{
-    padding-bottom: .50rem;
-    border-bottom: 4px solid rgb(0,255,255);
-    color:rgb(0,255,255); ;
-}
-.btn{
-    height: 2rem;
-    width: 10vw;
-    border: none;
-    background-color: white;
-    color: black;
-    font-weight: 700;
-    border-radius: 5rem;
-}
-.btn:hover{
-    background-color: aqua;
+  }
+  .nav-links a {
+    padding: 0.8rem 0;
+  }
+  .nav-links a.active::after {
+    right: auto;
+    bottom: 0.35rem;
+    width: 2rem;
+  }
 }
